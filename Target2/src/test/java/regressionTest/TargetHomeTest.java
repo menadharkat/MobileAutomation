@@ -4,7 +4,7 @@ import base.MobileAPI2;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import regression.TargetHome;
+import regressionEbay.TargetHome;
 
 public class TargetHomeTest extends MobileAPI2 {
 
@@ -13,7 +13,7 @@ public class TargetHomeTest extends MobileAPI2 {
     public void init(){
         home = PageFactory.initElements(appiumDriver, TargetHome.class);
     }
-    @Test
+    @Test(enabled = false)
     public void setGetstartedTest(){
        home.setGetstarted();
        home.setCreateaccount();
@@ -23,6 +23,14 @@ public class TargetHomeTest extends MobileAPI2 {
        home.setUserphone("1234567890");
        home.setUserpassword("Jeff2020");
        home.setCreateaccountButton();
+    }
+    @Test
+    public void setGuestTest(){
+        home.setGetstarted();
+        home.setGuest();
+        home.setNearstore();
+        home.setAllow();
+        home.setStorelocator("11214");
     }
 
 }

@@ -11,7 +11,8 @@
 <!--            <class name="packageEbayTest.EbayHomeTest"/>-->
 <!--            <class name="packageEbayTest.EbayAccountTest"/>-->
 <!--            <class name="packageEbayTest.EbayHamburgerTest"/>-->
-            <class name="packageEbayTest.EbayCategoriesTest"/>
+<!--            <class name="packageEbayTest.EbayCategoriesTest"/>-->
+            <class name="packageEbayTest.MobileAPI2Test"/>
         </classes>
     </test>
 </suite>

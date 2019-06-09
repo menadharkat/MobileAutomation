@@ -254,6 +254,7 @@ public class MobileAPI2 {
     public void scrollToElement(AppiumDriver driver, String element) {
         MobileElement we = (MobileElement) driver.findElementByXPath(element);
         driver.scrollTo(we.getText());
+        System.out.println(we.getText());
     }
 
     public void alertAccept(WebDriver driver) {
@@ -268,6 +269,9 @@ public class MobileAPI2 {
 
     public void scrollAndClickByName(String locator) {
         appiumDriver.scrollTo(locator).click();
+    }
+    public void scrollByName(String st){
+        appiumDriver.scrollTo(st);
     }
 }
 
